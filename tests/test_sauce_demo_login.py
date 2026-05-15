@@ -5,7 +5,7 @@ from pages.sauce_demo_home import HomePage
 import pytest
 
 
-@pytest.mark.skip(reason="already tested")
+
 def test_valid_login(page): 
     login_page = LoginPage(page)
     page.goto("https://www.saucedemo.com/")
@@ -15,7 +15,7 @@ def test_valid_login(page):
     login_page.click_login()
     expect(page.locator(".title")).to_have_text("Products")
 
-@pytest.mark.skip(reason="already tested")
+
 def test_invalid_login(page):
     login_page = LoginPage(page)
     page.goto("https://www.saucedemo.com/")
@@ -40,3 +40,4 @@ def test_home_page_banner_visibility(page):
     assert home_page.is_bikelight_visible()
     expected_options = ['Name (A to Z)Name (Z to A)Price (low to high)Price (high to low)']
     assert home_page.validate_dropdown_sortby_options(expected_options)
+    
