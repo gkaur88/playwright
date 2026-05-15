@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+.venv/
+venv/
+.gurjenv/
+gurjenv/
+.DS_Store
+
+# Pytest
+.pytest_cache/
+
+# Playwright
+playwright-report/
+test-results/
+videos/
+screenshots/
+trace.zip
+
+# Reports
+reports/
+
+# Node
+node_modules/
+gurjenv/lib/python3.9/site-packages/playwright/driver/node_modules/
